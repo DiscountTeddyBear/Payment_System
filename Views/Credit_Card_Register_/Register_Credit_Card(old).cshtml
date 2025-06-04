@@ -1,0 +1,59 @@
+﻿
+@model Payment_System_Web_Application_.Models.Credit_Card_Model
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<h2>Register Credit Card</h2>
+
+<style>
+    .input-error {
+        border: 2px solid red;
+        background-color: #ffeaea;
+    }
+</style>
+
+<form method="post">
+    <div>
+        <label>Card Number:</label>
+        <input asp-for="Card_Number" placeholder="e.g. 1234567890123456" class="@(Model.Is_Card_Number_Invalid ? "input-error" : "")" />
+    </div>
+    <div>
+        <label>Card CVV:</label>
+        <input asp-for="Card_CVV" placeholder="e.g. 834" class="@(Model.Is_Card_CVV_Invalid ? "input-error" : "")" />
+    </div>
+    <div>
+        <label>Card Expiration Date:</label>
+        <select asp-for="Card_Expiration_Month">
+            <option value="">01</option>
+            @for (int m = 2; m <= 12; m++)
+            {
+                <option value="@m">@m.ToString("D2")</option>
+            }
+        </select>
+        <label>/</label>
+        @{
+            int lastTwoDigits = DateTime.Now.Year % 100;
+        }
+        <select asp-for="Card_Expiration_Year">
+            <option value="">@lastTwoDigits</option>
+            @for (int m = (lastTwoDigits + 1); m <= (lastTwoDigits + 11); m++)
+            {
+                <option value="@m">@m.ToString("D2")</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label>Name on Card:</label>
+        <input asp-for="Card_First_Name" placeholder="First Name" class="@(Model.Is_Card_First_Name_Invalid ? "input-error" : "")" />
+        <input asp-for="Card_Last_Name" placeholder="Last Name" class="@(Model.Is_Card_Last_Name_Invalid ? "input-error" : "")" />
+    </div>
+    <div>
+        <button type="submit">Pay</button>
+    </div>
+</form>
+
+@if (Model.Message != null) 
+{
+    <p>@Model.Message</p>
+}

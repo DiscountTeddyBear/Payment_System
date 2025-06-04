@@ -1,0 +1,43 @@
+﻿@model Payment_System_Web_Application_.Models.Token_Model
+
+@{
+    ViewData["Title"] = "Create Token";
+    var Role = ViewData["Role"] as string ?? "Unknown";
+    var merchants = ViewData["Merchants"] as List<Payment_System_Web_Application_.Models.User_Model>;
+}
+<h4>Create Token</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create_Token">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Merchant_Name" class="control-label"></label>
+                <select asp-for="Merchant_Name" class="form-control">
+                    <option value="">Select Merchant</option>
+                    @foreach (var merchant in merchants)
+                    {
+                        <option value="@merchant.Username">@merchant.Username</option>
+                    }
+                </select>
+                <span asp-validation-for="Merchant_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Money" class="control-label"></label>
+                <input asp-for="Money" class="form-control" />
+                <span asp-validation-for="Money" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Credit_Card_Register_" asp-action="History">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

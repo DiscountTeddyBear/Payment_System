@@ -1,0 +1,27 @@
+﻿@model List<Payment_System_Web_Application_.Models.Token_Model>
+<h2>Your Order History</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction Id</th>
+            <th>Money</th>
+            <th>Card Name</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var token in Model)
+    {
+        <tr>
+            <td>@token.Transaction_Id</td>
+            <td>$@token.Money</td>
+            <td>@token.Card_Nickname</td>
+            <td>@token.IssuedAt</td>
+        </tr>
+    }
+    </tbody>
+</table>
+   <p>
+    <a asp-controller="Token_" asp-action="Index">Create New Token</a>
+</p>
+

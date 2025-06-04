@@ -1,0 +1,82 @@
+﻿@model Payment_System_Web_Application_.Models.Credit_Card_Model
+
+@{
+    // Generate month options (01-12)
+    var months = Enumerable.Range(2, 11)
+        .Select(m => m.ToString("D2"))
+        .ToList();
+
+    // Generate year options (current year to current year + 15)
+    var currentYear = DateTime.Now.Year % 100;
+    var years = Enumerable.Range(currentYear + 1, 16)
+        .Select(y => y.ToString())
+        .ToList();
+}
+
+<h4>Credit Card Registration</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register_Credit_Card">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Card_Number" class="control-label"></label>
+                <input asp-for="Card_Number" class="form-control" />
+                <span asp-validation-for="Card_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_CVV" class="control-label"></label>
+                <input asp-for="Card_CVV" class="form-control" />
+                <span asp-validation-for="Card_CVV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_Expiration_Month" class="control-label"></label>
+                <select asp-for="Card_Expiration_Month" class="form-control">
+                    <option value="">01</option>
+                    @foreach (var month in months)
+                    {
+                        <option value="@month">@month</option>
+                    }
+                </select>
+                <span asp-validation-for="Card_Expiration_Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_Expiration_Year" class="control-label"></label>
+                <select asp-for="Card_Expiration_Year" class="form-control">
+                    <option value="">@currentYear</option>
+                    @foreach (var year in years)
+                    {
+                        <option value="@year">@year</option>
+                    }
+                </select>
+                <span asp-validation-for="Card_Expiration_Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_First_Name" class="control-label"></label>
+                <input asp-for="Card_First_Name" class="form-control" />
+                <span asp-validation-for="Card_First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_Last_Name" class="control-label"></label>
+                <input asp-for="Card_Last_Name" class="form-control" />
+                <span asp-validation-for="Card_Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_Nickname" class="control-label"></label>
+                <input asp-for="Card_Nickname" class="form-control" />
+                <span asp-validation-for="Card_Nickname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register Card" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

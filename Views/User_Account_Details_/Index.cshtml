@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var Username = ViewData["Username"] as string ?? "Unknown";
+    var Role = ViewData["Role"] as string ?? "Unknown";
+}
+
+<div class="text-center">
+    <h1 class="display-4">User Account Details</h1>
+    <p>Currently logged in as @Username</p>
+    <p>Role: @Role</p>
+    <p><a asp-controller="Credit_Card_Registration" asp-action="Index">View Credit Cards</a></p>
+</div>
