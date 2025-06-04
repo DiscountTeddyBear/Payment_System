@@ -1,0 +1,42 @@
+﻿@model List<Payment_System_Web_Application_.Models.Credit_Card_Model>
+
+<h2>Your Credit Cards</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Card Number</th>
+            <th>Nickname</th>
+            <th>Is Default</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var card in Model)
+    {
+        <tr>
+            <td>**** **** **** @card.Card_Last_Four_Digits</td>
+            <td>@card.Card_Nickname</td>
+            <td>
+                @if (card.Is_Default)
+                {
+                    <span class="text-success">Default</span>
+                }
+                else
+                {
+                    <form asp-action="Set_Card_As_Default" asp-route-card_id="@card.Card_Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-sm btn-primary">Set As Default</button>
+                    </form>
+                }
+            </td>
+            <td>
+                <a asp-action="Edit_Credit_Card" asp-route-card_id="@card.Card_Id" class="btn btn-primary">Edit</a> | 
+                <a asp-action="Delete_Credit_Card" asp-route-card_id="@card.Card_Id" class="btn btn-primary">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+   <p>
+    <a asp-action="Credit_Card_Registration">Register New Credit Card</a>
+</p>
+

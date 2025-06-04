@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Payment_System_Web_Application_
+build_property.RootNamespace = Payment_System_Web_Application_
+build_property.ProjectDir = C:\Users\ethan\OneDrive\School Programs\C# School Programs\CISS 346 C# School Programs\Payment_System_Web_Application_\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ethan\OneDrive\School Programs\C# School Programs\CISS 346 C# School Programs\Payment_System_Web_Application_
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Credit_Card_Register_/Credit_Card_Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0X0NhcmRfUmVnaXN0ZXJfXENyZWRpdF9DYXJkX1JlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Credit_Card_Register_/Edit_Credit_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0X0NhcmRfUmVnaXN0ZXJfXEVkaXRfQ3JlZGl0X0NhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Credit_Card_Register_/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0X0NhcmRfUmVnaXN0ZXJfXEhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Credit_Card_Register_/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0X0NhcmRfUmVnaXN0ZXJfXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Credit_Card_Register_/Register_Credit_Card(old).cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0X0NhcmRfUmVnaXN0ZXJfXFJlZ2lzdGVyX0NyZWRpdF9DYXJkKG9sZCkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Home/Failed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYWlsZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Home/Login_Required_To_View_Content.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbl9SZXF1aXJlZF9Ub19WaWV3X0NvbnRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Home/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Login_/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Login_/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Token_/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9rZW5fXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/User_Account_Details_/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcl9BY2NvdW50X0RldGFpbHNfXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ethan/OneDrive/School Programs/C\# School Programs/CISS 346 C\# School Programs/Payment_System_Web_Application_/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c96elotg7j
